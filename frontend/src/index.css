@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-brutal-white min-h-screen font-sans;
+  }
+  
+  * {
+    @apply border-brutal-black;
+  }
+}
+
+@layer components {
+  .brutal-card {
+    @apply bg-brutal-white border-4 border-brutal-black shadow-brutal;
+  }
+  
+  .brutal-card-hover {
+    @apply bg-brutal-white border-4 border-brutal-black shadow-brutal hover:translate-x-1 hover:translate-y-1 hover:shadow-brutal-sm transition-all duration-100;
+  }
+  
+  .brutal-button {
+    @apply bg-brutal-red border-4 border-brutal-black shadow-brutal hover:translate-x-1 hover:translate-y-1 hover:shadow-brutal-sm active:translate-x-2 active:translate-y-2 active:shadow-none transition-all duration-100 font-bold uppercase;
+  }
+  
+  .brutal-button-black {
+    @apply bg-brutal-black text-brutal-white border-4 border-brutal-black shadow-brutal hover:translate-x-1 hover:translate-y-1 hover:shadow-brutal-sm active:translate-x-2 active:translate-y-2 active:shadow-none transition-all duration-100 font-bold uppercase;
+  }
+  
+  .brutal-input {
+    @apply bg-brutal-white border-4 border-brutal-black focus:border-brutal-red outline-none shadow-brutal-sm font-mono;
+  }
+  
+  .brutal-stat {
+    @apply bg-brutal-red border-4 border-brutal-black shadow-brutal text-brutal-white;
+  }
+  
+  .brutal-stat-black {
+    @apply bg-brutal-black border-4 border-brutal-black shadow-brutal text-brutal-white;
+  }
+}

@@ -1,0 +1,18 @@
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local scripts
+start-backend.bat
+start-backend.ps1
+start-frontend.bat
+start-frontend.ps1
