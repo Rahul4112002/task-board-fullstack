@@ -3,16 +3,19 @@
 ## 📦 GitHub Repository Details
 
 ### Repository Name
+
 ```
 task-board-fullstack
 ```
 
 ### Description
+
 ```
 A modern, production-ready task management application with FastAPI backend and React frontend. Features include task CRUD operations, progress tracking, streak counter, and confetti celebrations. Built with Python, FastAPI, React, Vite, and Tailwind CSS.
 ```
 
 ### Topics/Tags (Add on GitHub)
+
 ```
 fastapi, react, vite, tailwindcss, task-management, fullstack, python, javascript, rest-api, netlify, render, pydantic, task-board, productivity
 ```
@@ -24,6 +27,7 @@ fastapi, react, vite, tailwindcss, task-management, fullstack, python, javascrip
 ### STEP 1: Push to GitHub (5 minutes)
 
 **Option A: Use the Script (Easiest)**
+
 ```bash
 # On Windows PowerShell
 cd "C:\Users\RAHUL\OneDrive\Desktop\Fluid AI"
@@ -31,6 +35,7 @@ cd "C:\Users\RAHUL\OneDrive\Desktop\Fluid AI"
 ```
 
 **Option B: Manual Commands**
+
 ```bash
 cd "C:\Users\RAHUL\OneDrive\Desktop\Fluid AI"
 
@@ -54,6 +59,7 @@ git push -u origin main
 ```
 
 **Create Repository on GitHub:**
+
 1. Go to: https://github.com/new
 2. Name: `task-board-fullstack`
 3. Description: Copy from above
@@ -82,9 +88,11 @@ git push -u origin main
    Instance Type: Free
    ```
 6. **Environment Variables:**
+
    ```
    CORS_ORIGINS = https://your-app-name.netlify.app
    ```
+
    (You'll update this after Step 3)
 
 7. **Create Web Service**
@@ -92,6 +100,7 @@ git push -u origin main
 9. **Copy your URL:** `https://task-board-backend-xxxx.onrender.com`
 
 **Test Backend:**
+
 - Visit: `https://your-backend-url.onrender.com/docs`
 - Should see API documentation
 
@@ -100,8 +109,9 @@ git push -u origin main
 ### STEP 3: Deploy Frontend to Netlify (10 minutes)
 
 1. **Update Frontend Configuration**
-   
+
    Create `.env.production` file:
+
    ```bash
    cd frontend
    # On Windows
@@ -109,8 +119,9 @@ git push -u origin main
    ```
 
 2. **Update netlify.toml**
-   
+
    Edit `frontend/netlify.toml`:
+
    ```toml
    [[redirects]]
      from = "/api/*"
@@ -120,6 +131,7 @@ git push -u origin main
    ```
 
 3. **Commit Changes**
+
    ```bash
    git add .
    git commit -m "Configure production URLs"
@@ -127,6 +139,7 @@ git push -u origin main
    ```
 
 4. **Deploy to Netlify**
+
    - Go to: https://app.netlify.com
    - Sign in with GitHub
    - **Add new site** → **Import from Git**
@@ -162,6 +175,7 @@ git push -u origin main
 
 1. **Open your Netlify URL**
 2. **Test these features:**
+
    - ✅ Add a task
    - ✅ Complete a task
    - ✅ Delete a task
@@ -179,6 +193,7 @@ git push -u origin main
 ## ✅ Success Criteria
 
 Your app is ready when:
+
 - ✅ Backend API docs accessible at `/docs`
 - ✅ Frontend loads without errors
 - ✅ Can add, complete, and delete tasks
@@ -191,6 +206,7 @@ Your app is ready when:
 ## 🎉 You're Live!
 
 **Your URLs:**
+
 - 🌐 **Frontend:** https://your-app.netlify.app
 - 🔌 **Backend:** https://your-backend.onrender.com
 - 📚 **API Docs:** https://your-backend.onrender.com/docs
@@ -218,21 +234,27 @@ Visit the live app and start managing your tasks!
 ## 🔧 Troubleshooting
 
 ### Problem: CORS Error
+
 ```
 Access to fetch at 'https://...' has been blocked by CORS policy
 ```
+
 **Fix:** Update `CORS_ORIGINS` on Render to match your exact Netlify URL
 
 ### Problem: API Not Found (404)
+
 ```
 GET https://your-app.netlify.app/api/tasks 404
 ```
+
 **Fix:** Check `netlify.toml` redirect URL is correct
 
 ### Problem: Backend Slow
+
 ```
 First request takes 30+ seconds
 ```
+
 **Note:** Render free tier sleeps after inactivity. This is normal!
 
 ---
@@ -269,6 +291,7 @@ First request takes 30+ seconds
 You've successfully deployed a full-stack application to production! 🚀
 
 **Next Steps:**
+
 - ⭐ Star your repository
 - 📱 Share with friends
 - 💼 Add to your portfolio
